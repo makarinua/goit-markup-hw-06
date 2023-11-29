@@ -23,12 +23,390 @@ button{
 
 img{
     display: block;
+    max-width: 100%;
 }
 
 a{
     text-decoration: none;
 }
 /*===================== /Скидання =================*/
+
+/*===================== Перелом на 320 =================*/
+@media (max-width: 320px) {
+    .mobile{
+    }
+
+    .mobile-menu{
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0; 
+        width: 320px;
+        min-height: 640px;
+        background: #fcfcfc;
+        padding: 24px 24px 0 16px;
+        
+    }
+
+   .mobile-menu-close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu-close:hover,
+    .mobile-menu-close:focus{
+
+    }
+
+    .mobile-menu-close-svg{
+    }
+
+    .mobile-menu-nav{
+        padding-top: 24px;
+    }
+
+    .mobile-nav{
+        display: flex;
+        flex-direction:column;
+        gap: 40px;
+        margin-bottom: 168px;
+    }
+
+    .mobile-nav-li{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11; 
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+
+    .mobile-nav-link{
+        display: block;
+        text-decoration: none;
+        color: #2E2F42;
+    }
+
+    .mobile-nav-link:hover,
+    .mobile-nav-link:focus{
+        color: #404BBF;
+    }
+
+    .mobile-nav-activiti-page{
+        color: #404BBF;
+    }
+
+    .mobile-menu-contacts{
+
+    }
+
+    .mobile-menu-contacts-ul{
+        display: flex;
+        flex-direction:column;
+        gap: 24px;
+        margin-bottom: 48px;
+    }
+
+    .mobile-menu-contacts-li{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .mobile-menu-contacts-link{
+        display: block;
+        text-decoration: none;
+        font-style: normal;
+        color: #434455;
+    }
+
+    .mobile-menu-contacts-link:hover,
+    .mobile-menu-contacts-link:focus{
+        color: #4D5AE5;
+    }
+
+    .mobile-menu-contacts-link-activiti{
+        color: #4D5AE5;
+    }
+
+    .mobile-soc-mereji{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-li-soc-mereji{
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-linksoc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+    }
+/*=====================  Мобільне модальне вікно   =====================*/
+    .modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 640px;
+        background-color: rgba(46, 47, 66, 0.4);           
+    }
+
+    .modal-content {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        width: 288px;
+        transform: translate(-50%, -50%) scale(1);
+        min-height: 623px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 16px 24px;
+    }
+
+    .feedback-svg-close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .close-svg{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feedback-svg-close:hover,
+    .feedback-svg-close:focus{
+        background-color: #404bbf;
+        border: none;
+        fill: #ffffff;
+    }
+
+    .modal-content-text{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5; 
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 16px;
+    }
+
+    .form-content{
+        margin-bottom: 8px;
+    }
+    
+    .feedback-name{
+        margin-bottom: 4px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8E8F99;
+        display: block;    
+    }
+
+    .intut-name{
+        position: relative;
+    }
+    
+    .feedback-username{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        padding-left: 38px;
+        outline: transparent;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .feedback-svg{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feedback-username:focus-within{
+        border-color: #4D5AE5;
+    }
+    
+    .intut-name:focus-within{
+        fill: #4D5AE5;
+    }
+    
+    .form-comment{
+        margin-bottom: 16px;
+    }
+    
+    /*.feedback-name*/
+    
+    .feedback-comment{
+        width: 100%;
+        height: 120px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 8px 16px;
+        outline: transparent;
+        resize: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feedback-comment:focus-within{
+        border-color: #4D5AE5;
+    }
+    
+    .form-checkbox{
+        margin-bottom: 24px;
+    }
+    
+    .checkbox-input{
+    
+    }
+    
+    /*.visually-hidden*/
+    
+    .feedback-checkbox{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17; 
+        letter-spacing: 0.04em;
+        color: #8E8F99;
+    }
+    
+    .checkbox-box{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; 
+        fill: transparent;
+    }
+    
+    .checkbox-svg{
+    
+    }
+    
+    input[type="checkbox"]:checked + label > span{
+        background-color:#404bbf;
+        border: none;
+        fill:#F4F4FD;
+        stroke:#404bbf;
+    }
+
+    .checkbox-link{
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #4D5AE5;
+    
+    }
+    
+    .feedback-form-button {
+        display: block;
+        margin: auto auto;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5; 
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding: 16px 32px;
+        border-radius: 4px;
+        background: #4D5AE5;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .feedback-form-button:hover,
+    .feedback-form-button:focus{
+        background: #404BBF;
+    }
+/*=====================  /Мобільне модальне вікно   =====================*/
+}
+
+/*===================== /Перелом на 320 =================*/
+
+/*===================== Перелом на 768 =================*/
+
+@media (min-width: 321px) and (max-width: 1159px) {
+    .is-open{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+/*===================== /Перелом на 768 =================*/
+
+/*===================== Перелом на 1158 =================*/
+@media (min-width: 1158px) {
+    .is-open{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
 /*=================== Загальні ====================*/
 body{
@@ -177,6 +555,15 @@ body{
     max-width: 1440px;
     margin: auto auto;
     background-color: #2E2F42;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-image-bg {
+    background-image: url('../images/heroimage@2x.jpg');
+  }
 }
 
 /*.container*/
@@ -871,3 +1258,5 @@ input[type="checkbox"]:checked + label > span{
     background: #404BBF;
 }
 /*=====================  /Модальне вікно   =====================*/
+}
+/*===================== /Перелом на 1158 =================*/

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,60 @@
     <title>Web studio</title>
 </head>
 <body>
+    <!-- HTML розмітка мобільного меню -->
+    <div class="mobile">
+        <div class="mobile-menu is-open">
+            <button type="button" class="mobile-menu-close">
+                <svg class="mobile-menu-close-svg" width="8" height="8">
+                    <use href="./images/icons.svg#close-menu"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-li"><a href="./index.html" class="mobile-nav-link mobile-nav-activiti-page">Studio</a></li>
+                    <li class="mobile-nav-li"><a href="" class="mobile-nav-link">Portfolio</a></li>
+                    <li class="mobile-nav-li"><a href="" class="mobile-nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="mobile-menu-contacts">
+                <ul class="mobile-menu-contacts-ul">
+                    <li class="mobile-menu-contacts-li"><a href="tel:+110001111111" class="mobile-menu-contacts-link mobile-menu-contacts-link-activiti">+11 (000) 111-11-11</a></li>
+                    <li class="mobile-menu-contacts-li"><a href="mailto:info@devstudio.com" class="mobile-menu-contacts-link">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <ul class="mobile-soc-mereji">
+                <li class="mobile-li-soc-mereji">
+                    <a href="/" class="mobile-linksoc">
+                        <svg class="mobile-icon-soc-mereji" width="16" height="16">
+                            <use href="./images/icons.svg#ist"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-li-soc-mereji">
+                    <a href="/" class="mobile-linksoc">
+                        <svg class="mobile-icon-soc-mereji" width="16" height="16">
+                            <use href="./images/icons.svg#twit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-li-soc-mereji">
+                    <a href="/" class="mobile-linksoc">
+                        <svg class="mobile-icon-soc-mereji" width="16" height="16">
+                            <use href="./images/icons.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-li-soc-mereji">
+                    <a href="/" class="mobile-linksoc">
+                        <svg class="mobile-icon-soc-mereji" width="16" height="16">
+                            <use href="./images/icons.svg#link"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /HTML розмітка мобільного меню -->
     <header class="top-line">
             <div class="container container-header">                        
                 <nav class="top-line-nav">
@@ -84,7 +139,7 @@
                             <h2 class="our-team-title">Our Team</h2>
                             <ul class="our-team-ul">
                                 <li class="our-team-teacher">
-                                    <img src="./images/img3.jpg" alt="Mark Guerrero" class="our-teacher-img">
+                                    <img srcset="./images/img3@2x.jpg" src="./images/img3.jpg" alt="Mark Guerrero" class="our-teacher-img">
                                     <div class="teacher-pib-posada">
                                         <h3 class="our-team-teacher-title">Mark Guerrero</h3>
                                         <p class="our-team-teacher-text">Product Designer</p>
@@ -121,7 +176,7 @@
                                     </div>
                                 </li>
                                 <li class="our-team-teacher">
-                                    <img src="./images/img2.jpg" alt="Tom Ford" class="our-teacher-img">
+                                    <img srcset="./images/img2@2x.jpg" src="./images/img2.jpg" alt="Tom Ford" class="our-teacher-img">
                                     <div class="teacher-pib-posada">
                                         <h3 class="our-team-teacher-title">Tom Ford</h3>
                                         <p class="our-team-teacher-text">Frontend Developer</p>
@@ -158,7 +213,7 @@
                                     </div>
                                 </li>
                                 <li class="our-team-teacher">
-                                    <img src="./images/img1.jpg" alt="Camila Garcia" class="our-teacher-img">
+                                    <img srcset="./images/img@2x.jpg" src="./images/img1.jpg" alt="Camila Garcia" class="our-teacher-img">
                                     <div class="teacher-pib-posada">
                                         <h3 class="our-team-teacher-title">Camila Garcia</h3>
                                         <p class="our-team-teacher-text">Marketing</p>
@@ -240,7 +295,7 @@
                             <ul class="portfolio-ul">
                                 <li class="portfolio-li">
                                     <div class="box">
-                                        <img src="./images/img9.jpg" alt="Banking App" class="portfolio-foto">
+                                        <img srcset="./images/img9@2x.jpg" src="./images/img9.jpg" alt="Banking App" class="portfolio-foto">
                                             <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                         <div class="portfolio-app">
@@ -251,7 +306,7 @@
                                 </li>
                                 <li class="portfolio-li">
                                     <div class="box">
-                                        <img src="./images/img8.jpg" alt="Cashless Payment" class="portfolio-foto">
+                                        <img srcset="./images/img8@2x.jpg" src="./images/img8.jpg" alt="Cashless Payment" class="portfolio-foto">
                                             <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                                 App · Exotic Fruit Ecommerce App ·
                                                 Cloud Storage App</p>
@@ -263,7 +318,7 @@
                                 </li>
                                 <li class="portfolio-li">
                                     <div class="box">
-                                    <img src="./images/img7.jpg" alt="Meditation App" class="portfolio-foto">
+                                    <img srcset="./images/img7@2x.jpg" src="./images/img7.jpg" alt="Meditation App" class="portfolio-foto">
                                         <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                             App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
@@ -275,7 +330,7 @@
                                 </li>
                                 <li class="portfolio-li">
                                     <div class="box">
-                                    <img src="./images/img6.jpg" alt="Taxi Service" class="portfolio-foto">
+                                    <img srcset="./images/img6@2x.jpg" src="./images/img6.jpg" alt="Taxi Service" class="portfolio-foto">
                                         <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                             App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
@@ -287,7 +342,7 @@
                                 </li>
                                 <li class="portfolio-li">
                                     <div class="box">
-                                        <img src="./images/img5.jpg" alt="Screen Illustrations" class="portfolio-foto">
+                                        <img srcset="./images/img5@2x.jpg" src="./images/img5.jpg" alt="Screen Illustrations" class="portfolio-foto">
                                         <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                             App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
@@ -299,7 +354,7 @@
                                 </li>
                                 <li class="portfolio-li">
                                     <div class="box">
-                                    <img src="./images/img4.jpg" alt="Online Courses" class="portfolio-foto">
+                                    <img srcset="./images/img4@2x.jpg" src="./images/img4.jpg" alt="Online Courses" class="portfolio-foto">
                                         <p class="overlay overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                             App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
@@ -425,6 +480,6 @@
                 </form>
             </div>
         </div>
-        <!-- /HTML розмітка модального вікна -->
+    <!-- /HTML розмітка модального вікна -->
         </body>
 </html>
