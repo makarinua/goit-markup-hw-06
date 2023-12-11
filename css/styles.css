@@ -60,6 +60,28 @@ body {
     margin-left: auto;
     margin-right: auto; 
 }
+
+@media screen and (min-width:768px){
+    .container {
+        max-width: 738px;
+}
+}
+
+@media screen and (min-width: 1158px){
+    .container {
+        max-width: 1158px;
+}
+}
+    
+@media screen and (max-width: 1157px) {
+    .section {
+        padding: 96px 0;
+    }
+    
+    .box-svg {
+        display: none;
+    }
+}
 /*=================== /Загальні ====================*/
 /*===================== header =====================*/
 .top-line {
@@ -458,7 +480,7 @@ input[type="checkbox"]:checked+label>span {
 /*===================== /Форма для мобільного =====================*/
 
 /*===================== Hero section =====================*/
-.section {
+.section1 {
     padding-bottom: 72px;
 }
 
@@ -520,13 +542,410 @@ input[type="checkbox"]:checked+label>span {
 }
 /*===================== /Hero section =====================*/
 
+/*=======================  Benefits ===========================*/
+.benefits{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.benefits-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.benefits-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #434455;
+}
+
+/*=======================  /Benefits ===========================*/
+
+/*===================== 3 Секція =====================*/
+.our-team{
+    background-color: #F4F4FD;
+}
+
+/*.section*/
+
+/*.container*/
+
+.our-team-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.our-team-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.our-team-teacher{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.our-teacher-img{
+    width: 100%;
+}
+
+.teacher-pib-posada{
+    padding: 32px 0;
+}
+
+.our-team-teacher-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.our-team-teacher-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+.soc-mereji {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.li-soc-mereji {
+    width: 40px;
+    height: 40px;
+}
+
+.linksoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linksoc:hover,
+.linksoc:focus {
+    background-color: #404bbf;
+}
+
+.icon-soc-mereji {
+    display: block;
+    fill: #F4F4FD;
+}
+
+.icon-soc-mereji:hover {
+    fill: #404BBF;
+}
+/*===================== /3 Секція =====================*/
+
+/*===================== 4 Секція =====================*/
+
+/*.section*/
+
+/*.container*/
+
+.portfolio{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.portfolio-ul{
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-li{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-li:hover{
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.portfolio-foto{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box:hover .overlay {
+    transform: translatey(0);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+}
+
+.portfolio-app{    
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    position: sticky;
+    background-color: #FFFFFF;
+}
+
+.portfolio-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2E2F42;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.portfolio-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #434455;
+}
+/*===================== /4 Секція =====================*/
+
+/*=====================  footer   =====================*/
+.footer-text-logo {
+    padding-top: 100px;
+    background-color: #2E2F42;
+    padding-bottom: 100px;
+}
+
+.footer-padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 72px;
+}
+
+/*.container*/
+
+.footer-logo-text{
+    text-align: center;
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #4D5AE5;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-footer-span {
+    color: #F4F4FD;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #F4F4FD;
+    max-width: 264px;
+}
+
+.social-media{
+
+}
+
+.title-social-media {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.li-social-media {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-linksoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-linksoc:hover,
+.social-media-linksoc:focus{
+    background-color: #31d0aa;
+}
+
+.social-media-svg-item {
+    display: block;
+    fill: #f4f4fd;
+}
+
+.social-media-svg-item:hover {
+    fill: #31d0aa;
+}
+
+.subscribe{
+   
+}
+
+.subscribe-text{
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;    
+}
+
+.form-subscribe{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.subscribe-name{
+    margin: 0 auto;
+    
+}
+
+.subscribe-email{
+    width: 288px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+}
+
+.subscribe-email:placeholder{
+    color #ffffff;
+}
+
+.subscribe-button {
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.04em;
+	color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    height: 40px;
+    margin-left: 78px;
+    margin-right: 78px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus{
+    background: #404BBF;
+}
+
+
+.subscribe-svg{
+    margin-left: 16px;
+    fill: #ffffff;
+}
+/*=====================  /footer   =====================*/
 
 
 /*=================== Планшет та горизонтальне позиціювання мобільного ====================*/
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 738px;
+    .container1 {
+        max-width: 768px;
     }
 /*===================== header =====================*/
 .top-mobile-meny{
@@ -625,8 +1044,96 @@ input[type="checkbox"]:checked+label>span {
     margin-bottom: 112px;
 }
 /*===================== /Hero section =====================*/
+/*=======================  Benefits ===========================*/
+.benefits{
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 72px 24px;
+}
 
+.benefits-li{
+    width: calc((100% - 24px) / 2);
+}
 
+.benefits-title{
+    text-align: left;
+}
+/*=======================  /Benefits ===========================*/
+/*===================== 3 Секція =====================*/
+.our-team-ul{
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 64px 24px;
+}
+
+.our-team-teacher{
+    width: calc((100% - 72px) / 2);
+}
+
+/*===================== /3 Секція =====================*/
+
+/*===================== 4 Секція =====================*/
+.portfolio-ul{
+    row-gap: 72px;
+}
+
+.portfolio-li{
+    width: calc((100% - 24px) / 2);
+}
+/*===================== /4 Секція =====================*/
+/*=====================  footer   =====================*/
+.footer-padding {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.footer-logo-text{
+    margin-left: 108px;
+    width: 264px;
+    text-align: left;
+}
+
+.footer-text {    
+    max-width: 264px;
+}
+
+.social-media{
+    width: 264px;
+}
+
+.title-social-media {
+    text-align: left;
+}
+
+.social-media-footer {
+    justify-content: flex-start;
+}
+
+.subscribe{
+    margin-left: 108px;
+}
+
+.subscribe-text{
+    text-align: left;
+}
+
+.form-subscribe{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.subscribe-email{
+    width: 264px;
+}
+
+.subscribe-button {
+    margin-left: 0;
+}
+
+/*=====================  /footer   =====================*/
 
 /*===================== Форма для Планшета =====================*/
 .modal-content {
@@ -634,8 +1141,21 @@ input[type="checkbox"]:checked+label>span {
     width: 408px;
     min-height: 584px;
 }
-
 /*===================== /Форма для Планшета =====================*/
+
+/*=====================  Модальне вікно   =====================*/
+.modal-content {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+}
+
+.feedback-username{
+    padding-left: 38px;
+}
+.checkbox-input{
+}
+/*=====================  /Модальне вікно   =====================*/
 
 }
 /*=================== /Планшет та горизонтальне позиціювання мобільного ====================*/
@@ -643,7 +1163,7 @@ input[type="checkbox"]:checked+label>span {
 /*=================== ПК - дестоп ====================*/
 
 @media screen and (min-width: 1188px) {
-    .container {
+    .container1 {
         max-width: 1158px;
     }
 
@@ -706,6 +1226,127 @@ padding-left: 38px;
     margin-bottom: 68px;
 }
 /*===================== /Hero section =====================*/
+
+/*=======================  Benefits ===========================*/
+.benefits{
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-li{
+    width: calc((100% - 72px) / 4);
+}
+
+.box-svg {
+    display: flex;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-antenna {
+    display: block;
+}
+
+.icon-clock {
+    display: block;
+}
+
+.icon-diagram {
+    display: block;
+}
+
+.icon-astronaut {
+    display: block;
+}
+
+.benefits-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.benefits-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/*=======================  /Benefits ===========================*/
+
+/*===================== 3 Секція =====================*/
+.our-team-teacher{
+    width: calc((100% - 72px) / 4);
+}
+/*===================== /3 Секція =====================*/
+
+/*===================== 4 Секція =====================*/
+.portfolio-ul{
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-li{
+    width: calc((100% - 48px) / 3);
+}
+/*===================== /4 Секція =====================*/
+/*=====================  footer   =====================*/
+.footer-padding {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    gap: 24px;
+}
+
+.footer-logo-text{
+    margin-left: 0;
+    width: 264px;
+}
+
+.social-media{
+}
+
+.title-social-media {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.subscribe{
+    margin-left: 0;
+    flex-wrap: nowrap;
+}
+
+.subscribe-text{
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #ffffff;    
+}
+
+.form-subscribe{
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-name{
+    
+}
+
+.subscribe-email{
+    width: 264px;
+}
+/*=====================  /footer   =====================*/
 
 /*===================== /Форма для ПК =====================*/
 }
