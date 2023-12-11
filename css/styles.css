@@ -480,10 +480,6 @@ input[type="checkbox"]:checked+label>span {
 /*===================== /Форма для мобільного =====================*/
 
 /*===================== Hero section =====================*/
-.section1 {
-    padding-bottom: 72px;
-}
-
 .container{
 }
 
@@ -493,7 +489,6 @@ input[type="checkbox"]:checked+label>span {
     background-position: center;
     background-size: cover;
     max-width: 320px;
-    max-height: 432px;
     margin: auto auto;
     background-color: #2E2F42;
 }
