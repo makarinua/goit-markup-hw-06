@@ -94,7 +94,7 @@ body {
 
 .container-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     padding: 17px 16px;
 }
@@ -120,7 +120,10 @@ body {
 }
 .main-meny-li{}
 .main-meny-link{}
-.activiti-page{}
+
+.activiti-page {
+}
+
 .contacts-meny{
     display: none;
 }
@@ -139,7 +142,6 @@ body {
 /*===================== /header =====================*/
 
 /*===================== Мобільне меню =====================*/
-
 .backdrop-mobil{
     position: fixed;
     top: 0;
@@ -157,8 +159,10 @@ body {
 }
 
 /*.container*/
-.mobil-svg-close{}
-.mobil-close-svg{}
+.mobil-box{
+    position: relative;
+    min-height: 100vh;    
+}
 
 .mobil-svg-close {
     position: absolute;
@@ -175,7 +179,6 @@ body {
 }
 
 .mobil-close-svg {
-
 }
 
 .mobil-svg-close:hover,
@@ -185,12 +188,23 @@ body {
     fill: #ffffff;
 }
 
+.mobil-vp{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px 16px 40px 16px;
+}
+
+.mobil-first{   
+    position: relative;
+    flex-grow: 1;
+}
+
 .mobil-main-meny{
     display: flex;
     flex-direction:column;
     row-gap: 40px;
-    padding-top: 72px;
-    margin-bottom: 168px;
+    padding-top: 48px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -214,12 +228,22 @@ body {
     color: #404BBF;
 }
 
-.mobil-contacts-meny{}
+.mobil-main-meny-link-aktiv{
+    color: #404BBF;
+}
+
+
+.mobil-kontats{
+}
+
+.mobil-contacts-meny{
+    margin-bottom: 48px;
+}
+
 .mobil-contacts-meny-ul{
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    margin-bottom: 48px;
 }
 
 .mobil-contacts-meny-li{
@@ -241,10 +265,13 @@ body {
     color: #404BBF;
 }
 
+.mobil-address-link-aktiv{
+    color: #404BBF;
+}
+
 .social-media-mobil{
     display: flex;
-    column-gap: 40px;
-    margin-bottom: 40px;
+    justify-content:space-between;
 }
 
 .mobil-li-social-medi{
@@ -509,7 +536,7 @@ input[type="checkbox"]:checked+label>span {
     color: #FFFFFF;
     max-width: 288px;
     margin: 0 auto;
-    padding: 72px 16px;
+    margin-bottom: 72px;
 }
 
 .hero-button {
@@ -977,6 +1004,12 @@ input[type="checkbox"]:checked+label>span {
 .main-meny-link{
     display: block;
     padding: 24px 0;
+    color: #2E2F42;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
 }
 
 .activiti-page {
@@ -995,10 +1028,14 @@ input[type="checkbox"]:checked+label>span {
     border-radius: 2px;
 }
 
-.contacts-meny {
+.contacts-meny {    
     display: contents;
+}
+
+.contacts-meny-ul {
     display: flex;
-    gap: 12px;
+    flex-direction:column;
+    row-gap:12px;
 }
 
 .address-link{
@@ -1031,12 +1068,10 @@ input[type="checkbox"]:checked+label>span {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-    padding: 112px 0 0 0;
     margin-bottom: 36px;
 }
 
 .hero-button {
-    margin-bottom: 112px;
 }
 /*===================== /Hero section =====================*/
 /*=======================  Benefits ===========================*/
@@ -1062,7 +1097,7 @@ input[type="checkbox"]:checked+label>span {
 }
 
 .our-team-teacher{
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
 }
 
 /*===================== /3 Секція =====================*/
@@ -1180,7 +1215,7 @@ padding-left: 38px;
 }
 
 .contacts-meny-ul {
-    display: flex;
+    flex-direction:row;
     gap: 40px;
 }
 
@@ -1271,6 +1306,7 @@ padding-left: 38px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
 }
 /*=======================  /Benefits ===========================*/
 
@@ -1317,29 +1353,25 @@ padding-left: 38px;
 
 .subscribe{
     margin-left: 0;
-    flex-wrap: nowrap;
-}
-
-.subscribe-text{
-    margin-bottom: 16px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
-    color: #ffffff;    
 }
 
 .form-subscribe{
     display: flex;
-    gap: 24px;
+    flex-wrap: nowrap;
+    row-gap: 16px;
 }
 
 .subscribe-name{
-    
+    margin: 0 auto;
 }
 
 .subscribe-email{
-    width: 264px;
+    width: 288px;
+}
+
+.subscribe-button {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 /*=====================  /footer   =====================*/
 
